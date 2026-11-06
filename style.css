@@ -635,3 +635,242 @@ footer {
     text-transform: uppercase;
     color: rgba(212, 223, 245, 0.25);
 }
+
+/* ÉTICA APLICADA */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
+.eyebrow,
+.application-kicker {
+    display: inline-block;
+    color: #70d6ff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.ethics-section > .eyebrow {
+    margin-bottom: 12px;
+}
+
+.section-intro {
+    max-width: 720px;
+    color: rgba(220, 232, 255, 0.82);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin: -12px 0 28px;
+}
+
+.theory-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.theory-card {
+    position: relative;
+    padding: 28px;
+    border: 1px solid rgba(112, 214, 255, 0.18);
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(0, 180, 255, 0.10), rgba(255, 255, 255, 0.025) 65%);
+    overflow: hidden;
+}
+
+.theory-card::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -65px;
+    bottom: -90px;
+    border: 1px solid rgba(112, 214, 255, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 0 0 18px rgba(112, 214, 255, 0.025), 0 0 0 36px rgba(112, 214, 255, 0.02);
+}
+
+.theory-card.duty {
+    border-color: rgba(183, 155, 255, 0.22);
+    background: linear-gradient(145deg, rgba(123, 92, 210, 0.13), rgba(255, 255, 255, 0.025) 65%);
+}
+
+.theory-number {
+    display: block;
+    margin-bottom: 14px;
+    color: #70d6ff;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+}
+
+.duty .theory-number {
+    color: #c3aaff;
+}
+
+.theory-card h3,
+.application-heading h3 {
+    font-family: 'Cinzel', serif;
+    color: #fff;
+    font-size: 1.35rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.theory-card p {
+    color: rgba(220, 232, 255, 0.86);
+    line-height: 1.75;
+    font-size: 0.98rem;
+}
+
+.theory-question {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theory-question strong {
+    color: #d3ecff;
+}
+
+.application-heading {
+    margin: 54px 0 22px;
+    padding-left: 20px;
+    border-left: 2px solid #00b4ff;
+}
+
+.application-heading h3 {
+    font-size: 1.65rem;
+    margin: 8px 0;
+}
+
+.application-heading p {
+    max-width: 740px;
+    color: rgba(220, 232, 255, 0.78);
+    line-height: 1.7;
+}
+
+.agreements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.agreement-card {
+    display: flex;
+    gap: 14px;
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    background: rgba(255, 255, 255, 0.035);
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.agreement-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 180, 255, 0.28);
+    background: rgba(0, 180, 255, 0.055);
+}
+
+.agreement-index {
+    flex: 0 0 34px;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(0, 180, 255, 0.3);
+    border-radius: 50%;
+    color: #70d6ff;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.agreement-card h4 {
+    margin: 2px 0 7px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.agreement-card p {
+    color: rgba(220, 232, 255, 0.78);
+    font-size: 0.91rem;
+    line-height: 1.65;
+}
+
+.ethics-conclusion {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-top: 24px;
+    padding: 20px 22px;
+    border-radius: 14px;
+    background: rgba(0, 180, 255, 0.07);
+    border: 1px solid rgba(0, 180, 255, 0.16);
+}
+
+.ethics-conclusion > span {
+    color: #70d6ff;
+    font-size: 1.25rem;
+}
+
+.ethics-conclusion p {
+    color: rgba(220, 232, 255, 0.88);
+    line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 48px 18px 38px;
+    }
+
+    header h1 {
+        font-size: clamp(1.75rem, 9vw, 2.4rem);
+        letter-spacing: 0.1em;
+    }
+
+    header p {
+        line-height: 1.7;
+        letter-spacing: 0.14em;
+    }
+
+    main {
+        padding: 38px 16px;
+    }
+
+    .theory-grid,
+    .agreements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .theory-card {
+        padding: 23px;
+    }
+
+    .application-heading {
+        margin-top: 42px;
+    }
+
+    .application-heading h3 {
+        font-size: 1.35rem;
+    }
+
+    .agreement-card {
+        padding: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
