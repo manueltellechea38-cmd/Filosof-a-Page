@@ -3,182 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Filosofía</title>
+<meta name="description" content="Apuntes y actividades de Filosofía: pensamiento racional, falacias, argumentos y ética aplicada a Todo Tala.">
+<title>Filosofía | Pensar, argumentar y decidir</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-    <h1>Filosofía</h1>
-    <p>Ideas para pensar el mundo y nuestras decisiones</p>
+<header id="inicio">
+    <p class="site-label">Filosofía · UTU</p>
+    <h1>Pensar, argumentar<br>y decidir</h1>
+    <p class="header-subtitle">Preguntas sobre el mundo, las ideas y nuestras acciones</p>
+    <p class="byline">Trabajo realizado por <strong>Manuel Tellechea</strong> y <strong>Elías Pérez</strong></p>
 </header>
 
-<nav>
-    <a href="#">Inicio</a>
+<nav aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
     <a href="#documental">Documental</a>
-    <a href="#curiosidades">Curiosidades</a>
+    <a href="#mito-razon">Mito y razón</a>
     <a href="#falacias">Falacias</a>
-    <a href="#etica">Ética aplicada</a>
+    <a href="#argumentos">Argumentos</a>
+    <a href="#etica">Ética</a>
+    <a href="#todo-tala">Todo Tala</a>
 </nav>
 
 <main>
+    <section class="hero-panel" aria-labelledby="hero-title">
+        <div>
+            <p class="eyebrow">Una guía de lo trabajado en clase</p>
+            <h2 id="hero-title">Filosofar es aprender a preguntar</h2>
+            <p>La filosofía nos ayuda a pensar posibles respuestas, revisar nuestras ideas y dar razones para defender lo que creemos. En estas secciones reunimos temas y ejemplos trabajados en clase.</p>
+        </div>
+        <svg class="hero-illustration" viewBox="0 0 260 210" role="img" aria-labelledby="ilustracion-titulo">
+            <title id="ilustracion-titulo">Una pregunta conectada con ideas y razones</title>
+            <circle cx="130" cy="102" r="57" fill="rgba(0,180,255,.08)" stroke="rgba(112,214,255,.7)" stroke-width="1.5"/>
+            <circle cx="130" cy="102" r="40" fill="rgba(8,11,20,.8)" stroke="rgba(112,214,255,.3)"/>
+            <text x="130" y="119" text-anchor="middle" fill="#ffffff" font-size="52" font-family="Georgia,serif">?</text>
+            <circle cx="42" cy="46" r="5" fill="#70d6ff"/><circle cx="218" cy="48" r="4" fill="#c3aaff"/>
+            <circle cx="45" cy="165" r="4" fill="#c3aaff"/><circle cx="220" cy="164" r="5" fill="#70d6ff"/>
+            <path d="M48 49 91 74M212 51 169 75M50 162 91 132M215 161 169 130" stroke="rgba(112,214,255,.45)" stroke-width="1.5" stroke-dasharray="4 5"/>
+            <text x="32" y="30" fill="#b9dfff" font-size="10" letter-spacing="1">IDEAS</text>
+            <text x="189" y="30" fill="#d6c5ff" font-size="10" letter-spacing="1">RAZONES</text>
+            <text x="18" y="189" fill="#d6c5ff" font-size="10" letter-spacing="1">DUDAS</text>
+            <text x="188" y="189" fill="#b9dfff" font-size="10" letter-spacing="1">DECISIONES</text>
+        </svg>
+    </section>
 
-    <!-- DOCUMENTAL -->
     <section id="documental">
-        <h2>Documental</h2>
-
-        <article class="card">
-            <h3>El espinazo de la noche</h3>
-            <p>
-                En muchas culturas antiguas, los fenómenos naturales y astronómicos eran interpretados como señales del enojo o la voluntad de los dioses. Cuando ocurrían eventos como tormentas, eclipses o caídas de estrellas, las personas creían que los dioses estaban disgustados.
-Este enojo podía asociarse con castigos divinos, cambios en el destino de las personas o advertencias para la humanidad. Por eso, se realizaban rituales, ofrendas o ceremonias para calmar a los dioses y evitar consecuencias negativas.
-            </p>
-            <img src="imagen/Gemini_Generated_Image_oww3o3oww3o3oww3.png">
+        <p class="eyebrow">Mirar el cielo, hacerse preguntas</p>
+        <h2>El espinazo de la noche</h2>
+        <article class="documentary-card">
+            <img src="imagen/Gemini_Generated_Image_oww3o3oww3o3oww3.png" alt="Ilustración del cielo nocturno y el universo">
+            <div>
+                <h3>Del asombro a la búsqueda de explicaciones</h3>
+                <p>En este episodio de <em>Cosmos: un viaje personal</em>, Carl Sagan recorre distintas ideas sobre el cielo, desde relatos antiguos hasta la ciencia y la filosofía griegas. El tema muestra cómo las preguntas sobre el universo impulsan la búsqueda de explicaciones.</p>
+                <p class="reflection"><strong>Para pensar:</strong> ¿qué cambia cuando intentamos explicar un fenómeno con observación y razones?</p>
+                <a class="source-link" href="https://www.acmi.net.au/works/82879--the-backbone-of-night/" target="_blank" rel="noopener noreferrer">Consultar la ficha del episodio en ACMI ↗</a>
+            </div>
         </article>
-
     </section>
 
-    <!-- CURIOSIDADES -->
-    <section id="curiosidades">
-        <h2>Curiosidades</h2>
-
-        <article class="card">
-            <h3>¿Qué pasaba si los dioses se enojaban?</h3>
-            <p>En muchas culturas antiguas, los fenómenos naturales y astronómicos eran interpretados como señales del enojo o la voluntad de los dioses. Cuando ocurrían eventos como tormentas, eclipses o caídas de estrellas, las personas creían que los dioses estaban disgustados.
-Este enojo podía asociarse con castigos divinos, cambios en el destino de las personas o advertencias para la humanidad. Por eso, se realizaban rituales, ofrendas o ceremonias para calmar a los dioses y evitar consecuencias negativas.</p>
-            <img src="imagen/Gemini_Generated_Image_566c5d566c5d566c.png">
-        </article>
-
-        <article class="card">
-            <h3>¿Qué pensaban sobre las estrellas?</h3>
-            <p>En la antigüedad, las estrellas no eran vistas como cuerpos celestes lejanos, sino como elementos mágicos o divinos. Muchas civilizaciones creían que eran espíritus, dioses o fuegos eternos en el cielo.
-También se pensaba que las estrellas influían en la vida de las personas, dando origen a prácticas como la astrología. Además, servían como guía para la navegación y la medición del tiempo.</p>
-            <img src="imagen/Gemini_Generated_Image_rjd59brjd59brjd5.png">
-        </article>
-
-        <article class="card">
-            <h3>Origen del nombre "Vía Láctea"</h3>
-            <p>El nombre "Vía Láctea" proviene de la mitología griega y está relacionado con la diosa Hera. Según el mito, la galaxia se formó a partir de la leche derramada de Hera mientras amamantaba a Heracles.
-Por esta razón, se la asocia con una especie de "camino de leche" en el cielo, y en algunas culturas también se la conoce como el "espinazo de la noche", imaginando una gran estructura que sostiene el firmamento.</p>
-            <img src="imagen/Gemini_Generated_Image_g77k5rg77k5rg77k.png">
-        </article>
-
-        <article class="card">
-            <h3>Primer científico</h3>
-            <p>Uno de los primeros científicos reconocidos fue Tales de Mileto, un pensador de la antigua Grecia. Se destacó por intentar explicar el mundo a través de la razón y la observación, en lugar de recurrir únicamente a explicaciones mitológicas.
-Su enfoque marcó el inicio del pensamiento científico, buscando causas naturales para los fenómenos.</p>
-            <img src="imagen/Gemini_Generated_Image_l2956ol2956ol295.png">
-        </article>
-
-        <article class="card">
-            <h3>Origen del pensamiento racional</h3>
-            <p>El pensamiento racional surge principalmente en las islas jónicas y en la antigua Grecia. Allí, filósofos como Tales comenzaron a cuestionar las explicaciones tradicionales basadas en mitos y a buscar respuestas mediante la lógica y la observación.
-Este cambio fue clave para el desarrollo de la ciencia y la filosofía occidental.</p>
-            <img src="imagen/Gemini_Generated_Image_yqsb7yyqsb7yyqsb.png">
-        </article>
-
-        <article class="card">
-            <h3>Descubrimiento de las estaciones</h3>
-            <p>Las estaciones del año no fueron "descubiertas" por una sola persona, pero ya en la antigüedad se estudiaban sus causas. Filósofos como Anaximandro realizaron observaciones y experimentos sencillos para comprender los cambios en el clima y la posición del Sol.
-Con el tiempo, se entendió que las estaciones se deben al movimiento de la Tierra alrededor del Sol y la inclinación de su eje.</p>
-            <img src="imagen/Gemini_Generated_Image_k9fx9zk9fx9zk9fx.png">
-        </article>
-
+    <section id="mito-razon">
+        <p class="eyebrow">Distintas formas de explicar el mundo</p>
+        <h2>Del mito a la razón</h2>
+        <div class="concept-grid">
+            <article class="concept-card">
+                <img src="imagen/Gemini_Generated_Image_566c5d566c5d566c.png" alt="Representación de antiguas explicaciones del cielo">
+                <div><span class="small-tag">RELATOS Y CREENCIAS</span><h3>¿Qué pasaba si los dioses se enojaban?</h3>
+                <p>En algunas culturas antiguas, fenómenos como tormentas o eclipses se interpretaban mediante relatos sobre los dioses. Esas explicaciones variaban entre pueblos y épocas.</p></div>
+            </article>
+            <article class="concept-card">
+                <img src="imagen/Gemini_Generated_Image_rjd59brjd59brjd5.png" alt="Estrellas visibles en el cielo nocturno">
+                <div><span class="small-tag">OBSERVAR Y PREGUNTAR</span><h3>¿Qué pensaban sobre las estrellas?</h3>
+                <p>Las estrellas fueron observadas y explicadas de distintas maneras. También ayudaron a orientarse y a reconocer el paso del tiempo. La astronomía busca describirlas con observaciones y explicaciones comprobables.</p></div>
+            </article>
+            <article class="concept-card">
+                <img src="imagen/Gemini_Generated_Image_g77k5rg77k5rg77k.png" alt="La Vía Láctea extendida sobre el cielo">
+                <div><span class="small-tag">MITOLOGÍA GRIEGA</span><h3>El nombre “Vía Láctea”</h3>
+                <p>Un mito griego relaciona la Vía Láctea con la leche de la diosa Hera. Es una explicación mitológica del nombre; la astronomía describe la galaxia como el sistema donde se encuentra nuestro sistema solar.</p></div>
+            </article>
+            <article class="concept-card">
+                <img src="imagen/Gemini_Generated_Image_l2956ol2956ol295.png" alt="Pensador observando el cielo">
+                <div><span class="small-tag">PENSAMIENTO RACIONAL</span><h3>Tales de Mileto y las primeras preguntas</h3>
+                <p>Tales es recordado entre los primeros pensadores griegos que buscaron explicar la naturaleza mediante causas naturales. Es más preciso presentarlo como una figura temprana del pensamiento racional que llamarlo “el primer científico”.</p></div>
+            </article>
+        </div>
+        <div class="note-panel"><strong>Una diferencia útil:</strong> un mito transmite una explicación mediante relatos y creencias; la investigación racional busca razones, observaciones y argumentos que se puedan examinar.</div>
     </section>
 
-    <!-- FALACIAS -->
     <section id="falacias">
+        <p class="eyebrow">Reconocer argumentos engañosos</p>
         <h2>Falacias</h2>
-
-        <article class="card">
-            <h3>A la autoridad</h3>
-            <p>Un profesor pide silencio en clase porque necesita explicar un tema importante, y los alumnos lo respetan porque es quien manda en la clase.</p>
-            <img src="imagen/clase.png">
-        </article>
-
-        <article class="card">
-            <h3>A la misericordia</h3>
-            <p>Un policía para a alguien por una falta menor, pero en vez de darle una multa, decide advertirlo y dejarlo ir porque entiende su situación.</p>
-            <img src="imagen/policia.png">
-        </article>
-
+        <p class="section-intro">Una falacia parece una razón válida, pero intenta convencer sin dar un buen fundamento. Identificarla ayuda a evaluar mensajes, debates y publicidades.</p>
+        <div class="fallacy-grid">
+            <article class="fallacy-card"><span class="fallacy-symbol">★</span><div><h3>Apelación a la autoridad</h3><p>Se presenta algo como verdadero solo porque lo afirma alguien famoso o influyente, sin que esa persona sea experta ni aporte pruebas.</p><p class="example"><strong>Ejemplo:</strong> “Este suplemento funciona porque lo recomienda un actor famoso”.</p></div></article>
+            <article class="fallacy-card"><span class="fallacy-symbol">👥</span><div><h3>Apelación a la popularidad</h3><p>Se usa lo que hace o piensa la mayoría como si eso demostrara que algo es correcto.</p><p class="example"><strong>Ejemplo:</strong> “Todos mis amigos usan esta aplicación; por eso tiene que ser la mejor”.</p></div></article>
+            <article class="fallacy-card"><span class="fallacy-symbol">♡</span><div><h3>Apelación a la misericordia</h3><p>Se intenta conseguir una aceptación apelando a la lástima, en lugar de justificar la conclusión con razones pertinentes.</p><p class="example"><strong>Ejemplo:</strong> “Profe, no me ponga una mala nota porque tuve una semana difícil”.</p></div></article>
+            <article class="fallacy-card"><span class="fallacy-symbol">!</span><div><h3>Apelación a la fuerza</h3><p>Se usa una amenaza o presión para que alguien acepte una idea o cumpla una orden.</p><p class="example"><strong>Ejemplo:</strong> “Si no hacés silencio, te voy a sacar de la clase”.</p></div></article>
+            <article class="fallacy-card"><span class="fallacy-symbol">↗</span><div><h3>Contra el hombre</h3><p>Se ataca a la persona en vez de responder a lo que argumentó.</p><p class="example"><strong>Ejemplo:</strong> “Tu opinión sobre el reciclaje no vale porque una vez tiraste un papel al suelo”.</p></div></article>
+            <article class="fallacy-card"><span class="fallacy-symbol">≈</span><div><h3>Espantapájaros</h3><p>Se cambia o exagera la postura de otra persona para que resulte más fácil refutarla.</p><p class="example"><strong>Ejemplo:</strong> Ana propone reciclar más. Leo responde: “Entonces querés prohibir que la gente compre cosas nuevas”.</p></div></article>
+        </div>
+        <div class="note-panel"><strong>Ojo:</strong> que una persona tenga autoridad, que una idea sea popular o que alguien necesite compasión no vuelve automáticamente falso lo que dice. La falacia aparece cuando eso se usa como sustituto de una buena razón.</div>
     </section>
 
-    <!-- ÉTICA Y MORAL -->
+    <section id="argumentos">
+        <p class="eyebrow">Defender una idea con razones</p>
+        <h2>Argumentos</h2>
+        <p class="section-intro">Un argumento reúne premisas para apoyar una conclusión. En un argumento deductivo, si la forma es válida y las premisas son verdaderas, la conclusión se sigue necesariamente.</p>
+        <div class="argument-grid">
+            <article class="argument-card valid">
+                <span class="argument-label">FORMA VÁLIDA</span>
+                <h3>Un ejemplo deductivo</h3>
+                <p>Premisa 1: Todos los mamíferos necesitan oxígeno.</p>
+                <p>Premisa 2: El delfín es un mamífero.</p>
+                <p class="conclusion"><strong>Conclusión:</strong> El delfín necesita oxígeno.</p>
+            </article>
+            <article class="argument-card invalid">
+                <span class="argument-label">FORMA INVÁLIDA</span>
+                <h3>La conclusión no se desprende</h3>
+                <p>Premisa 1: Si llueve, la calle se moja.</p>
+                <p>Premisa 2: La calle está mojada.</p>
+                <p class="conclusion"><strong>Conclusión:</strong> Entonces llovió.</p>
+                <p class="explanation">La calle pudo mojarse por otra causa. Que las premisas parezcan relacionadas no alcanza para que la conclusión sea necesaria.</p>
+            </article>
+        </div>
+        <div class="note-panel"><strong>Validez y verdad:</strong> la validez depende de la forma lógica del argumento. La verdad depende de si lo que dicen sus premisas y conclusión coincide con los hechos.</div>
+    </section>
+
     <section id="etica" class="ethics-section">
         <p class="eyebrow">De las ideas a la vida cotidiana</p>
         <h2>Ética y moral</h2>
-        <p class="section-intro">La ética nos invita a reflexionar sobre nuestras decisiones y sobre cómo afectan a las demás personas. Estas ideas también pueden orientar el funcionamiento de una aplicación.</p>
+        <p class="section-intro">La moral reúne normas y costumbres que aprendemos en la familia y la sociedad. La ética reflexiona sobre esas normas y pregunta qué significa actuar bien.</p>
 
         <div class="theory-grid">
             <article class="theory-card utilitarian">
                 <span class="theory-number">01 · CONSECUENCIAS</span>
                 <h3>Utilitarismo de John Stuart Mill</h3>
                 <p>Una acción se evalúa por sus consecuencias. Es mejor la que contribuye al bienestar general, produce felicidad y reduce el sufrimiento de todas las personas afectadas.</p>
-                <p class="theory-question"><strong>Pregunta para decidir:</strong> ¿qué efectos tendrá esta decisión en quienes usan la aplicación?</p>
+                <p class="theory-question"><strong>Pregunta para decidir:</strong> ¿qué efectos tendrá esta decisión en quienes se ven afectados?</p>
             </article>
-
             <article class="theory-card duty">
                 <span class="theory-number">02 · DEBER Y RESPETO</span>
                 <h3>Ética del deber de Kant</h3>
                 <p>Actuar éticamente implica cumplir principios que puedan aplicarse a todas las personas y respetar la dignidad de cada una. Nadie debería ser tratado solamente como un medio para obtener un beneficio.</p>
-                <p class="theory-question"><strong>Pregunta para decidir:</strong> ¿esta regla sería justa si se aplicara a todos?</p>
+                <p class="theory-question"><strong>Pregunta para decidir:</strong> ¿sería justo que todos actuaran siguiendo esta regla?</p>
             </article>
         </div>
 
-        <div class="application-heading">
-            <span class="application-kicker">Un caso cercano</span>
+        <div class="application-heading" id="todo-tala">
+            <span class="application-kicker">Ética empresarial · caso aplicado</span>
             <h3>Acuerdos éticos para Todo Tala</h3>
             <p>Todo Tala conecta a compradores con comercios locales. Estos acuerdos buscan que la plataforma sea útil, confiable y respetuosa para todas las partes.</p>
         </div>
 
         <div class="agreements-grid">
-            <article class="agreement-card">
-                <span class="agreement-index">01</span>
-                <div><h4>Información verdadera</h4><p>Los comercios deben publicar precios, promociones, horarios y disponibilidad de forma clara y mantenerlos actualizados.</p></div>
-            </article>
-            <article class="agreement-card">
-                <span class="agreement-index">02</span>
-                <div><h4>Privacidad de las personas</h4><p>Los datos de compradores y comercios se deben usar solo para las funciones de la aplicación y no compartir sin autorización.</p></div>
-            </article>
-            <article class="agreement-card">
-                <span class="agreement-index">03</span>
-                <div><h4>Trato respetuoso</h4><p>Quienes usan la plataforma deben comunicarse sin insultos ni discriminación y no utilizarla para acosar o perjudicar a otras personas.</p></div>
-            </article>
-            <article class="agreement-card">
-                <span class="agreement-index">04</span>
-                <div><h4>Pedidos responsables</h4><p>Los compradores deben ingresar datos correctos. Los comercios deben confirmar los pedidos y avisar si no pueden cumplirlos o si surge un cambio.</p></div>
-            </article>
-            <article class="agreement-card">
-                <span class="agreement-index">05</span>
-                <div><h4>Reclamos justos</h4><p>Las partes deben poder explicar lo ocurrido y los responsables de la aplicación deben revisar cada reclamo de forma imparcial.</p></div>
-            </article>
-            <article class="agreement-card">
-                <span class="agreement-index">06</span>
-                <div><h4>Decisiones sin engaños</h4><p>La publicidad y las promociones no deben incluir datos falsos ni presionar a las personas. Cada usuario debe poder decidir libremente.</p></div>
-            </article>
-            <article class="agreement-card">
-                <span class="agreement-index">07</span>
-                <div><h4>Uso seguro</h4><p>No se deben crear cuentas falsas ni usar la aplicación para estafar. Los problemas de seguridad se deben reportar y atender.</p></div>
-            </article>
-            <article class="agreement-card">
-                <span class="agreement-index">08</span>
-                <div><h4>Responsabilidad ante errores</h4><p>Si la aplicación muestra información incorrecta o falla, sus responsables deben corregirlo y avisar a quienes puedan verse afectados.</p></div>
-            </article>
+            <article class="agreement-card"><span class="agreement-index">01</span><div><h4>Información verdadera</h4><p>Los comercios deben publicar precios, promociones, horarios y disponibilidad de forma clara y mantenerlos actualizados.</p></div></article>
+            <article class="agreement-card"><span class="agreement-index">02</span><div><h4>Privacidad de las personas</h4><p>Los datos de compradores y comercios se deben usar para las funciones de la aplicación y no compartir sin autorización.</p></div></article>
+            <article class="agreement-card"><span class="agreement-index">03</span><div><h4>Trato respetuoso</h4><p>Quienes usan la plataforma deben comunicarse sin insultos ni discriminación y no utilizarla para acosar o perjudicar a otros.</p></div></article>
+            <article class="agreement-card"><span class="agreement-index">04</span><div><h4>Pedidos responsables</h4><p>Los compradores deben ingresar datos correctos. Los comercios deben confirmar los pedidos y avisar si no pueden cumplirlos o si surge un cambio.</p></div></article>
+            <article class="agreement-card"><span class="agreement-index">05</span><div><h4>Reclamos justos</h4><p>Las partes deben poder explicar lo ocurrido y los responsables de la aplicación deben revisar cada reclamo de forma imparcial.</p></div></article>
+            <article class="agreement-card"><span class="agreement-index">06</span><div><h4>Decisiones sin engaños</h4><p>La publicidad y las promociones no deben incluir datos falsos ni presionar a las personas. Cada usuario debe poder decidir libremente.</p></div></article>
+            <article class="agreement-card"><span class="agreement-index">07</span><div><h4>Uso seguro</h4><p>No se deben crear cuentas falsas ni usar la aplicación para estafar. Los problemas de seguridad se deben reportar y atender.</p></div></article>
+            <article class="agreement-card"><span class="agreement-index">08</span><div><h4>Responsabilidad ante errores</h4><p>Si la aplicación muestra información incorrecta o falla, sus responsables deben corregirlo y avisar a quienes puedan verse afectados.</p></div></article>
         </div>
-
-        <div class="ethics-conclusion">
-            <span aria-hidden="true">✦</span>
-            <p><strong>¿Cómo se conectan estas ideas?</strong> Mill ayuda a pensar en el bienestar y las consecuencias para la comunidad. Kant recuerda que cada persona merece respeto y que las reglas deben ser justas para todos.</p>
-        </div>
+        <div class="ethics-conclusion"><span aria-hidden="true">✦</span><p><strong>¿Cómo se conectan estas ideas?</strong> Mill ayuda a pensar en el bienestar y las consecuencias para la comunidad. Kant recuerda que cada persona merece respeto y que las reglas deben ser justas para todos.</p></div>
     </section>
 
+    <section id="dilemas">
+        <p class="eyebrow">No siempre hay una respuesta fácil</p>
+        <h2>Dilemas éticos</h2>
+        <p class="section-intro">Un dilema presenta opciones difíciles porque cada una puede traer beneficios y perjuicios. Para analizarlo, hay que explicar qué criterios usamos y a quiénes afectan las consecuencias.</p>
+        <div class="dilemma-grid">
+            <article class="dilemma-card">
+                <span class="small-tag">CASO DE CLASE</span>
+                <h3>La barca y el tsunami</h3>
+                <p>Diez personas buscan escapar de un tsunami y la barca solo puede llevar a cinco en el primer viaje. ¿A quiénes elegirías y qué razones usarías?</p>
+                <p class="dilemma-prompt"><strong>Para debatir:</strong> ¿priorizarías la salud, la edad, las habilidades para ayudar o algún otro criterio?</p>
+            </article>
+            <article class="dilemma-card dilemma-application">
+                <span class="small-tag">CASO APLICADO</span>
+                <h3>Un precio incorrecto en la app</h3>
+                <p>Un producto aparece con un precio menor al real y una persona ya hizo el pedido. ¿Qué deberían hacer el comercio y los responsables de Todo Tala?</p>
+                <p class="dilemma-prompt"><strong>Para debatir:</strong> ¿qué decisión reduce el perjuicio y respeta a quienes participaron?</p>
+            </article>
+        </div>
+    </section>
 </main>
 
 <footer id="contacto">
     <p>Filosofía · pensamiento crítico y vida cotidiana · 2026</p>
+    <p class="footer-authors">Manuel Tellechea · Elías Pérez</p>
 </footer>
-
 </body>
 </html>
