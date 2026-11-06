@@ -874,3 +874,612 @@ section[id] {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/* PORTAFOLIO DE FILOSOFÍA */
+:root {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
+a:focus-visible {
+    outline: 2px solid #8edfff;
+    outline-offset: 4px;
+}
+
+header {
+    padding-top: 48px;
+}
+
+.site-label,
+.eyebrow,
+.application-kicker {
+    display: inline-block;
+    color: #70d6ff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+header .site-label {
+    margin-bottom: 14px;
+}
+
+header h1 {
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+}
+
+.header-subtitle {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    line-height: 1.7;
+    color: rgba(220, 232, 255, 0.78);
+    text-transform: none;
+}
+
+.byline {
+    margin-top: 22px;
+    padding: 9px 15px;
+    display: inline-block;
+    border: 1px solid rgba(112, 214, 255, 0.18);
+    border-radius: 999px;
+    background: rgba(0, 180, 255, 0.06);
+    color: rgba(220, 232, 255, 0.78);
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    text-transform: none;
+}
+
+.byline strong {
+    color: #fff;
+}
+
+nav a {
+    letter-spacing: 0.11em;
+    font-size: 0.74rem;
+}
+
+main {
+    max-width: 1080px;
+}
+
+.hero-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(210px, 0.8fr);
+    align-items: center;
+    gap: 20px;
+    padding: 30px 34px;
+    margin-bottom: 62px;
+    border: 1px solid rgba(112, 214, 255, 0.18);
+    border-radius: 20px;
+    background: linear-gradient(120deg, rgba(0, 180, 255, 0.11), rgba(123, 92, 210, 0.055) 68%, rgba(255,255,255,0.02));
+}
+
+.hero-panel .eyebrow {
+    margin-bottom: 12px;
+}
+
+.hero-panel h2 {
+    margin-bottom: 14px;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    letter-spacing: 0.015em;
+    text-transform: none;
+    line-height: 1.35;
+}
+
+.hero-panel h2::after {
+    display: none;
+}
+
+.hero-panel p:not(.eyebrow) {
+    color: rgba(220, 232, 255, 0.84);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.hero-illustration {
+    width: min(100%, 260px);
+    justify-self: center;
+    margin: 0;
+    border: 0;
+    filter: none;
+}
+
+section {
+    margin-bottom: 78px;
+}
+
+section > .eyebrow {
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    max-width: 760px;
+    color: rgba(220, 232, 255, 0.82);
+    font-size: 1.02rem;
+    line-height: 1.8;
+    margin: -12px 0 25px;
+}
+
+.documentary-card {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.15fr);
+    gap: 26px;
+    align-items: center;
+    padding: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.035);
+}
+
+.documentary-card img,
+.concept-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 190px;
+    max-height: 270px;
+    object-fit: cover;
+    margin: 0;
+    filter: brightness(0.9) saturate(0.9);
+}
+
+.documentary-card h3,
+.concept-card h3,
+.dilemma-card h3 {
+    margin: 10px 0;
+    color: #f4f8ff;
+    font-family: 'Cinzel', serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.documentary-card p,
+.concept-card p,
+.dilemma-card p {
+    color: rgba(220,232,255,0.82);
+    line-height: 1.75;
+}
+
+.reflection {
+    margin: 16px 0;
+    padding: 12px 14px;
+    border-left: 2px solid #70d6ff;
+    background: rgba(0,180,255,0.05);
+    border-radius: 0 10px 10px 0;
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 6px;
+    color: #8edfff;
+    font-size: 0.88rem;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.concept-grid,
+.fallacy-grid,
+.argument-grid,
+.dilemma-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.concept-card {
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    background: rgba(255,255,255,0.035);
+    transition: transform .25s ease, border-color .25s ease;
+}
+
+.concept-card:hover,
+.fallacy-card:hover,
+.dilemma-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0,180,255,0.25);
+}
+
+.concept-card img {
+    height: 190px;
+    min-height: 0;
+    max-height: 190px;
+    border: 0;
+    border-radius: 0;
+}
+
+.concept-card > div {
+    padding: 20px;
+}
+
+.small-tag,
+.argument-label {
+    display: inline-block;
+    color: #80d9ff;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+}
+
+.note-panel {
+    margin-top: 18px;
+    padding: 17px 20px;
+    border: 1px solid rgba(112,214,255,.16);
+    border-radius: 13px;
+    background: rgba(0,180,255,.055);
+    color: rgba(225,237,255,.88);
+    line-height: 1.7;
+}
+
+.fallacy-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 19px;
+    border: 1px solid rgba(255,255,255,.075);
+    border-radius: 15px;
+    background: rgba(255,255,255,.035);
+    transition: transform .25s ease, border-color .25s ease;
+}
+
+.fallacy-symbol {
+    flex: 0 0 34px;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: #bfeeff;
+    background: rgba(0,180,255,.13);
+    font-size: 1rem;
+}
+
+.fallacy-card h3,
+.argument-card h3 {
+    margin: 2px 0 8px;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 1.12rem;
+    line-height: 1.4;
+}
+
+.fallacy-card p,
+.argument-card p {
+    color: rgba(220,232,255,.8);
+    font-size: .92rem;
+    line-height: 1.7;
+}
+
+.fallacy-card .example {
+    margin-top: 8px;
+    color: rgba(220,232,255,.93);
+}
+
+.argument-card,
+.dilemma-card {
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,.085);
+    border-radius: 16px;
+    background: rgba(255,255,255,.035);
+}
+
+.argument-card.valid {
+    border-top: 2px solid #59d6bb;
+}
+
+.argument-card.invalid {
+    border-top: 2px solid #ffb071;
+}
+
+.argument-card .argument-label {
+    color: #73e1c9;
+}
+
+.argument-card.invalid .argument-label {
+    color: #ffc28f;
+}
+
+.argument-card .conclusion {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    color: #fff;
+}
+
+.argument-card .explanation {
+    margin-top: 10px;
+    font-size: .85rem;
+    color: rgba(220,232,255,.68);
+}
+
+.theory-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.theory-card {
+    position: relative;
+    overflow: hidden;
+    padding: 27px;
+    border: 1px solid rgba(112,214,255,.18);
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(0,180,255,.10), rgba(255,255,255,.025) 65%);
+}
+
+.theory-card.duty {
+    border-color: rgba(183,155,255,.22);
+    background: linear-gradient(145deg, rgba(123,92,210,.13), rgba(255,255,255,.025) 65%);
+}
+
+.theory-number {
+    display: block;
+    margin-bottom: 14px;
+    color: #70d6ff;
+    font-size: .68rem;
+    letter-spacing: .18em;
+}
+
+.duty .theory-number {
+    color: #c3aaff;
+}
+
+.theory-card h3,
+.application-heading h3 {
+    margin-bottom: 12px;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 1.32rem;
+    line-height: 1.4;
+}
+
+.theory-card p {
+    color: rgba(220,232,255,.86);
+    font-size: .96rem;
+    line-height: 1.75;
+}
+
+.theory-question {
+    margin-top: 15px;
+    padding-top: 13px;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.theory-question strong {
+    color: #d3ecff;
+}
+
+.application-heading {
+    margin: 48px 0 22px;
+    padding-left: 19px;
+    border-left: 2px solid #00b4ff;
+}
+
+.application-heading h3 {
+    margin: 8px 0;
+    font-size: 1.6rem;
+}
+
+.application-heading p {
+    max-width: 760px;
+    color: rgba(220,232,255,.78);
+    line-height: 1.7;
+}
+
+.agreements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.agreement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 17px;
+    border: 1px solid rgba(255,255,255,.075);
+    border-radius: 14px;
+    background: rgba(255,255,255,.035);
+    transition: transform .25s ease, border-color .25s ease, background .25s ease;
+}
+
+.agreement-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0,180,255,.28);
+    background: rgba(0,180,255,.055);
+}
+
+.agreement-index {
+    flex: 0 0 34px;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(0,180,255,.3);
+    border-radius: 50%;
+    color: #70d6ff;
+    font-size: .72rem;
+    font-weight: 600;
+}
+
+.agreement-card h4 {
+    margin: 2px 0 7px;
+    color: #fff;
+    font-size: .98rem;
+}
+
+.agreement-card p {
+    color: rgba(220,232,255,.78);
+    font-size: .88rem;
+    line-height: 1.65;
+}
+
+.ethics-conclusion {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-top: 22px;
+    padding: 19px 21px;
+    border: 1px solid rgba(0,180,255,.16);
+    border-radius: 14px;
+    background: rgba(0,180,255,.07);
+}
+
+.ethics-conclusion > span {
+    color: #70d6ff;
+    font-size: 1.25rem;
+}
+
+.ethics-conclusion p {
+    color: rgba(220,232,255,.88);
+    line-height: 1.7;
+}
+
+.dilemma-card {
+    border-color: rgba(123,92,210,.19);
+    background: linear-gradient(150deg, rgba(123,92,210,.09), rgba(255,255,255,.025) 70%);
+    transition: transform .25s ease, border-color .25s ease;
+}
+
+.dilemma-card .small-tag {
+    color: #c3aaff;
+}
+
+.dilemma-card.dilemma-application {
+    border-color: rgba(0,180,255,.18);
+    background: linear-gradient(150deg, rgba(0,180,255,.08), rgba(255,255,255,.025) 70%);
+}
+
+.dilemma-application .small-tag {
+    color: #70d6ff;
+}
+
+.dilemma-prompt {
+    margin-top: 13px;
+    padding-top: 13px;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+footer {
+    line-height: 1.7;
+    text-transform: none;
+    letter-spacing: .08em;
+}
+
+.footer-authors {
+    margin-top: 7px;
+    color: rgba(212,223,245,.55);
+    font-size: .72rem;
+}
+
+@media (max-width: 720px) {
+    .hero-panel,
+    .documentary-card {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-panel {
+        padding: 25px 22px;
+    }
+
+    .hero-illustration {
+        width: min(75%, 230px);
+        max-height: 180px;
+    }
+
+    .documentary-card img {
+        max-height: 240px;
+    }
+
+    .concept-grid,
+    .fallacy-grid,
+    .argument-grid,
+    .theory-grid,
+    .agreements-grid,
+    .dilemma-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 38px 16px 34px;
+    }
+
+    header h1 {
+        font-size: clamp(1.8rem, 9vw, 2.35rem);
+        letter-spacing: .045em;
+    }
+
+    .header-subtitle {
+        font-size: .88rem;
+    }
+
+    .byline {
+        max-width: 100%;
+        line-height: 1.6;
+    }
+
+    nav {
+        gap: 4px;
+        padding: 10px 8px;
+    }
+
+    nav a {
+        padding: 7px 9px;
+        font-size: .66rem;
+        letter-spacing: .06em;
+    }
+
+    main {
+        padding: 34px 15px;
+    }
+
+    section {
+        margin-bottom: 58px;
+    }
+
+    .hero-panel {
+        margin-bottom: 48px;
+    }
+
+    .hero-panel h2 {
+        font-size: 1.5rem;
+    }
+
+    .argument-card,
+    .dilemma-card {
+        padding: 20px;
+    }
+
+    .application-heading {
+        margin-top: 38px;
+    }
+
+    .application-heading h3 {
+        font-size: 1.35rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: .01ms !important;
+    }
+}
